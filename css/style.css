@@ -73,16 +73,11 @@ body {
   border: 1px solid #bbf7d0;
 }
 
-.blog__card__content__badge {
-  padding: 1px 7.5px;
-}
-
 .blog-card_title{
   font-weight: 700;
   line-height: 28px;
   font-size: 18px;
 }
-
 
 .blog-card_text{
   display: flex;
@@ -92,7 +87,39 @@ body {
   font-size: 16px;
 }
 
+.blog__card__info__btn{
+  max-width: 114px;
+  gap: 6px;
+  border-radius: 4px;
+  padding: 0px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--var-indigo-700);
+  font-family: inherit;
+}
 
+.blog__card__info__btn:hover, 
+.blog__card__info__btn:focus{
+  color: var(--var-indigo-800);
+  cursor: pointer;
+}
+
+.blog__card__info__btn:focus{
+  box-shadow: 
+  0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+  width: auto;
+}
+
+.blog__card__info__btn:disabled{
+  color: var(--var-neutral-400);
+  cursor: not-allowed;
+}
 
 .credits {
   color: #777;
